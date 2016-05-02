@@ -1,0 +1,78 @@
+/* Hide it */
+#sr-header-area,
+.side,
+.listing-chooser,
+.trending-subreddits {
+    display: none !important;
+}
+
+body {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
+    /*font-size: 16px;*/
+}
+
+body > .content {
+    margin-left: 0 !important;
+}
+
+#siteTable {
+    margin-top: 20px;
+}
+
+/* Listings */
+.entry {
+    min-height: 70px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.4 !important;
+}
+
+.thumbnail {
+    float: right;
+}
+
+.title {
+    font-size: 18px !important;
+    color: #0081CB !important;
+}
+
+.title:visited {
+    color: #7fc0e5 !important;
+}
+
+.tagline {
+    font-size: 14px !important;
+    color: #6f7c82 !important;
+}
+
+.tagline a.author {
+    margin-right: 0 !important;
+    color: #292e31 !important;    
+}
+
+.tagline a.subreddit {
+    color: #0081CB !important;    
+}
+
+.flat-list {
+    font-size: 12px !important;
+}
+
+.flat-list a.comments {
+    color: #292e31 !important;    
+    font-weight: normal !important;
+}
+
+.last-clicked {
+    border: 0 !important;
+}
+
+.thumbnail,
+.expando-button,
+.rank,
+.linkflairlabel,
+.share,
+.link-save-button,
+.link-save-button + li,
+.report-button {
+    display: none !important;
+}
