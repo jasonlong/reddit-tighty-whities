@@ -26,6 +26,7 @@ body > .content {
 }
 
 #sr-header-area .srdrop {
+    display: none; /* TEMP */
     position: relative !important;
     top: 45px !important;
     left: 115px !important;
@@ -46,8 +47,28 @@ body > .content {
     border-bottom: 0 !important;
 }
 
+#header-img {
+    margin-right: 0;
+}
+
 #header .tabmenu {
     display: none !important;
+}
+
+#header-bottom-left .pagename {
+    font-variant: normal !important;
+    text-transform: lowercase !important;
+    font-size: 22px !important;
+    font-weight: normal !important;
+    color: #999;    
+}
+
+#header-bottom-left .pagename:before {
+    content: '/r/';
+}
+
+#header-bottom-left .pagename a {
+    color: #333;
 }
 
 #header-bottom-right {
