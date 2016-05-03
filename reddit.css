@@ -18,6 +18,12 @@ body > .content {
     margin-left: 0 !important;
 }
 
+textarea {
+    border-radius: 3px !important;
+    border-color: #ccc !important;
+    background-color: #fcfcfc !important;
+}
+
 #sr-header-area {
     margin-top: -10px;
     background-color: #fff !important;
@@ -26,10 +32,11 @@ body > .content {
 }
 
 #sr-header-area .srdrop {
-    display: none; /* TEMP */
+    /*
     position: relative !important;
     top: 45px !important;
     left: 115px !important;
+    */
 }
 
 #sr-header-area .title {
@@ -105,7 +112,7 @@ body > .content {
     width: 100% !important;
     border-radius: 3px !important;
     border-color: #ccc !important;
-    background-color: #fefefe !important;
+    background-color: #fcfcfc !important;
 }
 
 /* Advanced search box */
@@ -170,4 +177,27 @@ body > .content {
 .link-save-button + li,
 .report-button {
     display: none !important;
+}
+
+/* Posts */
+.usertext-body {
+    font-size: 15px !important;
+}
+
+.usertext-body .md {
+    border: 0 !important;
+    background-color: #fff !important;
+    padding: 0 !important;
+    color: #333;
+}
+
+.panestack-title {
+    margin-right: 0 !important;
+    padding-top: 12px !important;
+	border-top: solid 1px #ddd !important;
+    border-bottom: 0 !important;
+}
+
+.panestack-title .title {
+    font-size: 14px !important;
 }
