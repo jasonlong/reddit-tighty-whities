@@ -201,3 +201,27 @@ textarea {
 .panestack-title .title {
     font-size: 14px !important;
 }
+
+/* New comments */
+.comment-visits-box {
+    background-color: #fff !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 30px !important;
+    margin-left: 10px !important;
+}
+
+.comment-visits-box .title {
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #ff4500 !important;
+}
+
+.new-comment .usertext-body {
+	padding: 0 !important;
+    border: 0 !important;
+}
+
+.new-comment .usertext-body .md {
+    color: #ff4500 !important;
+}
