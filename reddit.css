@@ -41,6 +41,7 @@ body > .content {
 
 /* Site header */
 #header {
+    margin-bottom: 12px !important;
     background-color: #fff !important;
     border-bottom: 0 !important;
 }
@@ -81,6 +82,15 @@ body > .content {
 
 #search input[type=text] {
     width: 100% !important;
+    border-radius: 3px !important;
+    border-color: #ccc !important;
+    background-color: #fefefe !important;
+}
+
+/* Advanced search box */
+.infobar {
+    background-color: #f1f7fd !important;
+    border-color: #cee3f8 !important;
 }
 
 /* Listings */
