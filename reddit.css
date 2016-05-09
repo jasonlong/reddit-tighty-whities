@@ -17,7 +17,7 @@ body {
 }
 
 body > .content {
-    margin-left: 0 !important;
+    margin: 0 !important;
 }
 
 textarea {
@@ -77,7 +77,7 @@ textarea {
     text-indent: -9999px !important;
 }
 
-#header-image-a {
+#header-img-a {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -159,6 +159,8 @@ span[class="hover pagename redditname"] a {
 
 .side > .spacer:first-child {
     display: block !important;
+    padding: 0 !important;
+    height: 0 !important;
 }
 
 #search {
@@ -187,6 +189,15 @@ span[class="hover pagename redditname"] a {
 }
 
 /* Listings */
+.listing-page .link {
+    border-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.linkflair-amas {
+    background-color: inherit !important;
+}
+
 .entry {
     min-height: 70px !important;
     margin-bottom: 15px !important;
