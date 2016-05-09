@@ -25,18 +25,24 @@ textarea {
 }
 
 #sr-header-area {
-    margin-top: -10px;
+    margin-bottom: 10px;
     background-color: #fff !important;
     border-bottom: 0 !important;
     text-transform: lowercase !important;
 }
 
 #sr-header-area .srdrop {
-    /*
-    position: relative !important;
-    top: 45px !important;
-    left: 115px !important;
-    */
+    border-color: #ccc !important;
+	font-size: 12px !important;    
+}
+
+#sr-header-area .srdrop a {
+    padding: 4px 10px !important;    
+    color: #0081CB !important;
+}
+
+.srdrop .choice.bottom-option {
+    border-top: solid 1px #ccc !important;
 }
 
 #sr-header-area .title {
@@ -50,7 +56,7 @@ textarea {
 /* Site header */
 #header {
     margin-bottom: 12px !important;
-    background-color: #fff !important;
+    background-color: transparent !important;
     border-bottom: 0 !important;
 }
 
@@ -79,7 +85,12 @@ textarea {
 }
 
 #header-bottom-right {
-    background-color: #fff !important;
+    display: inline-block;
+    position: absolute !important;
+    top: -1px !important;
+    right: 0;
+    text-align: right;
+    background-color: transparent !important;
     font-size: 14px !important;
 }
 
@@ -106,6 +117,14 @@ textarea {
 
 .side > .spacer:first-child {
     display: block !important;
+}
+
+#search {
+    float: right;
+    width: 33%;
+    margin-top: -45px;
+    position: relative;
+    z-index: 100;
 }
 
 #search input[type=text] {
