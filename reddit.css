@@ -18,6 +18,8 @@ body {
 
 body > .content {
     margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
 }
 
 textarea {
@@ -151,10 +153,13 @@ span[class="hover pagename redditname"] a {
     float: none !important;
     width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
 }
 
 .side > .spacer {
     display: none !important;
+    margin: 0 !important;
 }
 
 .side > .spacer:first-child {
@@ -198,8 +203,11 @@ span[class="hover pagename redditname"] a {
     background-color: inherit !important;
 }
 
+.link.last-clicked {
+    background-color: inherit !important;
+}
+
 .entry {
-    min-height: 70px !important;
     margin-bottom: 15px !important;
     line-height: 1.4 !important;
 }
@@ -208,7 +216,8 @@ span[class="hover pagename redditname"] a {
     float: right;
 }
 
-.title {
+.title,
+.thing .title {
     font-size: 18px !important;
     color: #0081CB !important;
 }
@@ -267,6 +276,11 @@ span[class="hover pagename redditname"] a {
     color: #333;
 }
 
+div.thing.link {
+    padding: 0 !important;
+    border-bottom: 0 !important;
+}
+
 .panestack-title {
     margin-right: 0 !important;
     padding-top: 12px !important;
@@ -276,6 +290,11 @@ span[class="hover pagename redditname"] a {
 
 .panestack-title .title {
     font-size: 14px !important;
+}
+
+/* Comments */
+.morecomments a {
+    font-size: 12px !important;
 }
 
 /* New comments */
