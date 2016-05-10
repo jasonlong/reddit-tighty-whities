@@ -74,10 +74,12 @@ textarea {
 /* Site header */
 #header {
   height: auto !important;
-  margin-bottom: 12px !important;
+  margin: 0 0 12px 0 !important;
+  line-height: normal !important;
   background-color: transparent !important;
   background-image: none !important;
-  border-bottom: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 /* Show default logo instead of custom one */
@@ -88,8 +90,7 @@ textarea {
   width: 120px !important;
   height: 40px !important;
   padding: 0 !important;
-  margin-top: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 0 3px 0 !important;
   margin-bottom: 3px !important;
   text-indent: -9999px !important;
   visibility: visible !important;
@@ -139,7 +140,6 @@ textarea {
   top: 0 !important;
   display: inline !important;
   padding: 0 !important;
-  margin: 0 !important;
   font-size: 22px !important;
   font-weight: normal !important;
   vertical-align: baseline !important;
@@ -169,6 +169,21 @@ span[class="hover pagename redditname"] a {
   text-align: right !important;
   background-color: transparent !important;
   border: 0 !important;
+}
+
+#header-bottom-right .user {
+  position: relative !important;
+  top: 0 !important;
+  right: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+  text-align: left !important;
+}
+
+#header-bottom-right .user .userkarma {
+  font-weight: normal !important;
+  color: #6f7c82 !important;
 }
 
 #header-bottom-right a {
@@ -413,3 +428,4 @@ div.thing.link {
 .new-comment .usertext-body .md {
   color: #ff4500 !important;
 }
+
