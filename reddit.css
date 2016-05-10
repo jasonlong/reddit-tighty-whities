@@ -69,19 +69,24 @@ textarea {
 
 /* Site header */
 #header {
+  height: auto !important;
   margin-bottom: 12px !important;
   background-color: transparent !important;
+  background-image: none !important;
   border-bottom: 0 !important;
 }
 
 /* Show default logo instead of custom one */
 #header-img {
+  position: relative !important;
+  top: auto !important;
   display: inline-block !important;
   width: 120px !important;
   height: 40px !important;
   margin-right: 0 !important;
   margin-bottom: 3px !important;
   text-indent: -9999px !important;
+  visibility: visible !important;
   content: url() !important;
   background-image: url(https://www.redditstatic.com/about/assets/reddit-logo.png) !important;
   background-repeat: no-repeat !important;
@@ -99,8 +104,10 @@ textarea {
 }
 
 #header-bottom-left {
+  position: relative !important;
   display: inline-block;
   height: 45px !important;
+  padding-top: 0 !important;
   font-size: 12px !important;
   line-height: normal !important;
   background-image: none !important;
@@ -120,12 +127,13 @@ textarea {
 }
 
 #header-bottom-left .pagename a {
+  height: 25px !important;
   padding-top: 0 !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
   font-size: 22px !important;
+  font-weight: normal !important;
   vertical-align: baseline !important;
-  height: 25px !important;
 }
 
 span[class="hover pagename redditname"] a {
@@ -133,8 +141,8 @@ span[class="hover pagename redditname"] a {
 }
 
 #header-bottom-left .pagename a {
-  background-image: none !important;
   color: #999 !important;
+  background-image: none !important;
 }
 
 #header-bottom-right {
@@ -145,6 +153,7 @@ span[class="hover pagename redditname"] a {
   font-size: 14px !important;
   text-align: right !important;
   background-color: transparent !important;
+  border: 0 !important;
 }
 
 #header-bottom-right a {
@@ -296,9 +305,9 @@ span[class="hover pagename redditname"] a {
 
 .link .score {
   margin-top: 2px !important;
-  color: #6f7c82 !important;
   font-size: 14px !important;
   font-weight: normal !important;
+  color: #6f7c82 !important;
 }
 
 .arrow {
