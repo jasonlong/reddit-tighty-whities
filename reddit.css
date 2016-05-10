@@ -1,3 +1,13 @@
+/*
+
+Colors
+-------------------
+link: #249eec
+visited: #8eccf5
+text: #444
+light text: #a5a4a4
+*/
+
 /* Hide it */
 .sr-list,
 #sr-more-link,
@@ -42,7 +52,7 @@ textarea {
 
 #sr-header-area .srdrop a {
   padding: 4px 10px !important;
-  color: #0081cb !important;
+  color: #249eec !important;
 }
 
 .srdrop .choice.bottom-option {
@@ -64,7 +74,7 @@ textarea {
   border-bottom: 0 !important;
 }
 
-/* Don't show custom logo */
+/* Show default logo instead of custom one */
 #header-img {
   display: inline-block !important;
   width: 120px !important;
@@ -114,6 +124,8 @@ textarea {
   padding-left: 0 !important;
   margin-left: 0 !important;
   font-size: 22px !important;
+  vertical-align: baseline !important;
+  height: 25px !important;
 }
 
 span[class="hover pagename redditname"] a {
@@ -121,6 +133,7 @@ span[class="hover pagename redditname"] a {
 }
 
 #header-bottom-left .pagename a {
+  background-image: none !important;
   color: #999 !important;
 }
 
@@ -135,7 +148,7 @@ span[class="hover pagename redditname"] a {
 }
 
 #header-bottom-right a {
-  color: #0081cb !important;
+  color: #249eec !important;
 }
 
 .logout {
@@ -219,25 +232,37 @@ span[class="hover pagename redditname"] a {
 .title,
 .thing .title {
   font-size: 18px !important;
-  color: #0081cb !important;
+  color: #249eec !important;
 }
 
 .title:visited {
-  color: #7fc0e5 !important;
+  color: #8eccf5 !important;
+}
+
+.domain {
+  display: none !important;
 }
 
 .tagline {
   font-size: 14px !important;
-  color: #6f7c82 !important;
+  color: #a5a4a4 !important;
 }
 
 .tagline a.author {
   margin-right: 0 !important;
-  color: #292e31 !important;
+  color: #a5a4a4 !important;
+}
+
+.tagline a.author:hover {
+  color: #222 !important;
+}
+
+.flair-sc {
+  margin-left: 3px !important;
 }
 
 .tagline a.subreddit {
-  color: #0081cb !important;
+  color: #249eec !important;
 }
 
 .flat-list {
@@ -246,7 +271,7 @@ span[class="hover pagename redditname"] a {
 
 .flat-list a.comments {
   font-weight: normal !important;
-  color: #292e31 !important;
+  color: #a5a4a4 !important;
 }
 
 .last-clicked {
@@ -264,6 +289,38 @@ span[class="hover pagename redditname"] a {
   display: none !important;
 }
 
+/* Voting controls */
+.link .midcol {
+  margin-top: 4px !important;
+}
+
+.link .score {
+  margin-top: 2px !important;
+  color: #6f7c82 !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.arrow {
+  background-position: 0 0 !important;
+  background-size: 14px 15px !important;
+}
+
+.arrow.up {
+  background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-up.png) !important;
+}
+
+.arrow.down {
+  background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-down.png) !important;
+}
+
+.arrow.upmod {
+  background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-up-active.png) !important;
+}
+
+.arrow.downmod {
+  background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-down-active.png) !important;
+}
 /* Posts */
 .usertext-body {
   font-size: 15px !important;
@@ -271,7 +328,7 @@ span[class="hover pagename redditname"] a {
 
 .usertext-body .md {
   padding: 0 !important;
-  color: #333 !important;
+  color: #444 !important;
   background-color: #fff !important;
   border: 0 !important;
 }
