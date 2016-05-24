@@ -36,6 +36,10 @@ body > .content {
   border: 0 !important;
 }
 
+body > .content:before {
+  display: none !important;
+}
+
 textarea {
   background-color: #fcfcfc !important;
   border-color: #ccc !important;
@@ -43,6 +47,7 @@ textarea {
 }
 
 #sr-header-area {
+  height: 18px !important;
   margin-bottom: 10px;
   text-transform: lowercase !important;
   background-color: #fff !important;
@@ -50,8 +55,14 @@ textarea {
 }
 
 #sr-header-area .srdrop {
+  padding-left: 0 !important;
   font-size: 12px !important;
   border-color: #ccc !important;
+}
+
+#sr-header-area .srdrop .selected {
+  padding: 0 20px 0 0 !important;
+  margin: 0 !important;
 }
 
 #sr-header-area .srdrop a {
@@ -69,6 +80,7 @@ textarea {
 
 #siteTable {
   padding-top: 20px !important;
+  margin-right: 0 !important;
 }
 
 /* Site header */
@@ -114,11 +126,15 @@ textarea {
 
 #header-bottom-left {
   position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
   display: inline-block;
   height: 45px !important;
   padding: 0 !important;
+  margin: 0 !important;
   font-size: 12px !important;
   line-height: normal !important;
+  background-color: #fff !important;
   background-image: none !important;
 }
 
@@ -138,12 +154,21 @@ textarea {
 #header-bottom-left .pagename a {
   position: relative !important;
   top: 0 !important;
+  left: 0 !important;
   display: inline !important;
   padding: 0 !important;
+  margin: 0 !important;
+  font-family: inherit !important;
   font-size: 22px !important;
   font-weight: normal !important;
+  text-shadow: none !important;
   vertical-align: baseline !important;
   background-color: #fff !important;
+  transition: none !important;
+}
+
+#header-bottom-left .pagename a:before {
+  display: none !important;
 }
 
 span[class="hover pagename redditname"] a {
@@ -151,6 +176,7 @@ span[class="hover pagename redditname"] a {
 }
 
 #header-bottom-left .pagename a {
+  margin-left: 0 !important;
   color: #999 !important;
   background-image: none !important;
 }
@@ -165,7 +191,10 @@ span[class="hover pagename redditname"] a {
   top: -1px !important;
   right: 0 !important;
   display: inline-block !important;
+  max-width: none !important;
+  height: 74px !important;
   font-size: 14px !important;
+  line-height: 12px !important;
   text-align: right !important;
   background-color: transparent !important;
   border: 0 !important;
@@ -178,16 +207,22 @@ span[class="hover pagename redditname"] a {
   min-width: 0 !important;
   padding: 0 !important;
   line-height: inherit !important;
+  color: #444 !important;
   text-align: left !important;
 }
 
 #header-bottom-right .user .userkarma {
+  font-size: 14px !important;
   font-weight: normal !important;
   color: #6f7c82 !important;
 }
 
 #header-bottom-right a {
+  top: 0 !important;
   color: #249eec !important;
+  text-indent: 0 !important;
+  background-image: none !important;
+  transition: none !important;
 }
 
 .logout {
@@ -199,6 +234,7 @@ span[class="hover pagename redditname"] a {
 .pref-lang {
   display: none !important;
 }
+
 
 /* Get search box out of sidebar */
 .side {
@@ -220,8 +256,13 @@ span[class="hover pagename redditname"] a {
   padding: 0 !important;
 }
 
+.side:after {
+  display: none !important;
+}
+
 #search {
   position: relative !important;
+  top: 0 !important;
   z-index: 100 !important;
   float: right !important;
   width: 33% !important;
@@ -241,6 +282,7 @@ span[class="hover pagename redditname"] a {
   background-image: none !important;
   border: solid 1px #ccc !important;
   border-radius: 3px !important;
+  box-shadow: none !important;
 }
 
 #search #searchexpando {
@@ -271,8 +313,10 @@ span[class="hover pagename redditname"] a {
 }
 
 .entry {
+  padding: 0 !important;
   margin-bottom: 15px !important;
   line-height: 1.4 !important;
+  border-bottom: 0 !important;
 }
 
 .thumbnail {
@@ -281,8 +325,20 @@ span[class="hover pagename redditname"] a {
 
 .title,
 .thing .title {
+  font-family: inherit !important;
   font-size: 18px !important;
+  line-height: inherit !important;
   color: #249eec !important;
+}
+
+.thing.stickied a.title {
+  color: #249eec !important;
+}
+
+.thing.stickied .entry li .comments,
+.link .entry .buttons li a.comments {
+  font-weight: normal !important;
+  color: #888 !important;
 }
 
 .title:visited,
@@ -295,8 +351,11 @@ span[class="hover pagename redditname"] a {
 }
 
 .tagline {
+  margin-top: 0 !important;
+  font-family: inherit !important;
   font-size: 14px !important;
   color: #a5a4a4 !important;
+  transition: none !important;
 }
 
 .tagline a.author {
@@ -317,6 +376,8 @@ span[class="hover pagename redditname"] a {
 }
 
 .flat-list {
+  padding: 0 !important;
+  margin: 0 !important;
   font-size: 12px !important;
 }
 
@@ -342,7 +403,9 @@ span[class="hover pagename redditname"] a {
 
 /* Voting controls */
 .link .midcol {
-  margin-top: 4px !important;
+  width: 50px !important;
+  height: auto !important;
+  margin: 4px 0 0 !important;
 }
 
 .link .score {
@@ -353,24 +416,39 @@ span[class="hover pagename redditname"] a {
 }
 
 .arrow {
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0 auto !important;
   background-position: 0 0 !important;
   background-size: 14px 15px !important;
 }
 
-.arrow.up {
+.arrow.up,
+.arrow.up:hover {
+  background-color: transparent !important;
   background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-up.png) !important;
+  transition: none !important;
 }
 
-.arrow.down {
+.arrow.down,
+.arrow.down:hover {
+  background-color: transparent !important;
   background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-down.png) !important;
+  transition: none !important;
+}
+
+.arrow.down:after {
+  display: none !important;
 }
 
 .arrow.upmod {
   background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-up-active.png) !important;
+  transition: none !important;
 }
 
 .arrow.downmod {
   background-image: url(http://jasonlong.github.io/reddit-tighty-whities/images/vote-down-active.png) !important;
+  transition: none !important;
 }
 /* Posts */
 .usertext-body {
