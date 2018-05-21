@@ -1,3 +1,7 @@
+**Update:** With the new (as of mid-2018) Reddit redesign, I'm not longer maintaining this userstyle.
+
+----
+
 Super WIP for now. Lots of work to do to normalize subreddits with custom designs.
 
 Screenshot (to be updated):
