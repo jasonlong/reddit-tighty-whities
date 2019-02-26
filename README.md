@@ -1,4 +1,4 @@
-**Update:** With the new (as of mid-2018) Reddit redesign, I'm no longer maintaining this userstyle.
+**Update:** With the new (as of mid-2018) Reddit redesign, I'm no longer maintaining this userstyle!
 
 ----
 
